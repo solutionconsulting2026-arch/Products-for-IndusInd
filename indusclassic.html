@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .account-card {
+      position: relative;
+      width: 600px;
+      min-height: 330px;
+      padding: 32px 28px;
+
+      /* DARK RED BORDER */
+      border: 3px solid #94152f;
+      border-radius: 28px;
+
+      /* PEACH CARD BACKGROUND */
+      background: linear-gradient(
+        135deg,
+        #fff3ee 0%,
+        #f8ded8 100%
+      );
+
+      overflow: hidden;
+
+      box-shadow: 0 2px 8px rgba(148, 21, 47, 0.15);
+    }
+
+    /* MOST CHOSEN BADGE */
+    .badge {
+      display: inline-block;
+      padding: 9px 17px;
+      border-radius: 20px;
+      background: #94152f;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* TITLE */
+    .title {
+      margin: 20px 0 5px;
+      color: #54101f;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    /* SUBTITLE */
+    .subtitle {
+      margin: 0;
+      color: #765b61;
+      font-size: 21px;
+    }
+
+    /* FEATURES */
+    .features {
+      margin-top: 27px;
+      padding-left: 22px;
+      color: #573b40;
+      font-size: 19px;
+      line-height: 1.65;
+    }
+
+    .features li {
+      padding-left: 3px;
+    }
+
+    /* WALLET ILLUSTRATION AREA */
+    .wallet-area {
+      position: absolute;
+      top: 28px;
+      right: 32px;
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      background: #efd4d1;
+    }
+
+    /* WALLET */
+    .wallet {
+      position: absolute;
+      top: 52px;
+      left: 18px;
+      width: 105px;
+      height: 70px;
+      background: #94152f;
+      border-radius: 11px;
+      box-shadow: 0 3px 5px rgba(90, 20, 30, 0.15);
+    }
+
+    /* WALLET TOP */
+    .wallet-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 105px;
+      height: 24px;
+      background: #851128;
+      border-radius: 10px 10px 4px 4px;
+    }
+
+    /* WALLET CLASP */
+    .wallet-clasp {
+      position: absolute;
+      top: 24px;
+      right: 13px;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: #f2c13c;
+      border: 3px solid #d8a62d;
+    }
+
+    /* COINS */
+    .coins {
+      position: absolute;
+      right: 0;
+      bottom: 17px;
+      width: 52px;
+      height: 58px;
+    }
+
+    .coin {
+      position: absolute;
+      width: 47px;
+      height: 17px;
+      border-radius: 50%;
+      background: #e7b83c;
+      border: 2px solid #d49d24;
+    }
+
+    .coin::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: 6px;
+      width: 47px;
+      height: 13px;
+      border-radius: 50%;
+      border-bottom: 2px solid #c79220;
+    }
+
+    .coin-1 {
+      top: 28px;
+      left: 0;
+    }
+
+    .coin-2 {
+      top: 19px;
+      left: 4px;
+    }
+
+    .coin-3 {
+      top: 10px;
+      left: 8px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 650px) {
+      .account-card {
+        width: 100%;
+        min-height: 330px;
+      }
+
+      .wallet-area {
+        right: 15px;
+        transform: scale(0.8);
+        transform-origin: top right;
+      }
+
+      .title {
+        font-size: 23px;
+      }
+
+      .features {
+        font-size: 16px;
+        max-width: 85%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="account-card">
+
+    <div class="badge">MOST CHOSEN</div>
+
+    <h2 class="title">Indus Classic</h2>
+
+    <p class="subtitle">AMB ₹10,000 (metro/urban)</p>
+
+    <ul class="features">
+      <li>Titanium debit card</li>
+      <li>Cheque book after full KYC</li>
+      <li>Branch + digital banking</li>
+    </ul>
+
+    <!-- Wallet & Coins -->
+    <div class="wallet-area">
+
+      <div class="wallet">
+        <div class="wallet-top"></div>
+        <div class="wallet-clasp"></div>
+      </div>
+
+      <div class="coins">
+        <div class="coin coin-1"></div>
+        <div class="coin coin-2"></div>
+        <div class="coin coin-3"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

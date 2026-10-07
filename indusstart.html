@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indus Digi-Start Card</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 30px;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .account-card {
+      position: relative;
+      width: 600px;
+      min-height: 330px;
+      padding: 32px 28px;
+      border: 3px solid #7160d8;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #f2efff 0%, #e8e4ff 100%);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(90, 70, 180, 0.15);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 9px 17px;
+      border-radius: 20px;
+      background: #6958cf;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .title {
+      margin: 20px 0 5px;
+      color: #17275c;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #6c6d91;
+      font-size: 21px;
+    }
+
+    .features {
+      margin-top: 27px;
+      padding-left: 22px;
+      color: #33417a;
+      font-size: 19px;
+      line-height: 1.65;
+    }
+
+    .features li { padding-left: 3px; }
+
+    .phone-area {
+      position: absolute;
+      top: 28px;
+      right: 32px;
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      background: #d9d3fa;
+    }
+
+    .phone {
+      position: absolute;
+      top: 3px;
+      left: 29px;
+      width: 76px;
+      height: 135px;
+      border: 9px solid #282653;
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+    }
+
+    .phone-screen {
+      position: absolute;
+      top: 22px;
+      left: 13px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #6c59d6;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .screen-line {
+      position: absolute;
+      left: 13px;
+      width: 35px;
+      height: 6px;
+      border-radius: 5px;
+      background: #ddd8f7;
+    }
+
+    .line-one { top: 66px; }
+    .line-two { top: 81px; width: 27px; }
+
+    .star-one {
+      position: absolute;
+      right: 14px;
+      top: 18px;
+      color: #f5c34f;
+      font-size: 34px;
+    }
+
+    .star-two {
+      position: absolute;
+      left: -5px;
+      bottom: 37px;
+      color: #8a76e7;
+      font-size: 25px;
+    }
+
+    .arrow {
+      position: absolute;
+      left: 13px;
+      bottom: 125px;
+      width: 18px;
+      height: 18px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+      transform: rotate(45deg);
+      opacity: 0.9;
+    }
+
+    @media (max-width: 650px) {
+      .account-card {
+        width: 100%;
+        min-height: 330px;
+      }
+
+      .phone-area {
+        right: 15px;
+        transform: scale(0.8);
+        transform-origin: top right;
+      }
+
+      .title { font-size: 23px; }
+
+      .features {
+        font-size: 16px;
+        max-width: 85%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="account-card">
+    <div class="badge">DIGITAL ONLY</div>
+
+    <h2 class="title">Indus Digi-Start</h2>
+
+    <p class="subtitle">Zero balance</p>
+
+    <ul class="features">
+      <li>Zero average balance requirement</li>
+      <li>Virtual debit card on activation</li>
+      <li>INDIE app, UPI &amp; net banking from day one</li>
+    </ul>
+
+    <div class="phone-area">
+      <div class="phone">
+        <div class="phone-screen">₹</div>
+        <div class="screen-line line-one"></div>
+        <div class="screen-line line-two"></div>
+      </div>
+
+      <div class="star-one">✦</div>
+      <div class="star-two">✦</div>
+    </div>
+
+    <div class="arrow"></div>
+  </div>
+</body>
+</html>
